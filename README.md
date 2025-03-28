@@ -11,110 +11,54 @@ Currently, two official plugins are available:
 
 If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
-.navbar {
-display: flex;
-padding: 20px 6%;
-position: fixed;
-width: 100%;
-z-index: 1;
-justify-content: space-between;
-font-size: 14px;
-color: #e5e5e5;
-background-image: linear-gradient(
-180deg,
-rgba(0, 0, 0, 0.7) 10%,
-transparent
-);
-}
+# Netflix Clone
 
-.navbar-left {
-display: flex;
-align-items: center;
-gap: 50px;
-}
-.navbar-left img {
-width: 90px;
-}
-.navbar-left ul {
-display: flex;
-gap: 20px;
-list-style: none;
-}
-.navbar-left ul li {
-cursor: pointer;
-}
-.navbar-right {
-display: flex;
-align-items: center;
-gap: 20px;
-}
-.navbar-right .icons {
-width: 20px;
-cursor: pointer;
-}
-.navbar-right .profile {
-width: 35px;
+## Overview
 
-border-radius: 4px;
-}
-.navbar-profile {
-display: flex;
-align-items: center;
-gap: 10px;
-cursor: pointer;
-position: relative;
-}
-.navbar .dropdown {
-position: absolute;
-top: 100%;
-right: 0;
-width: max-content;
-background: #191919;
-padding: 18px 22px;
-border-radius: 2px;
-z-index: 1;
-text-decoration: underline;
-display: none;
-}
+A Netflix-inspired web application built with React and Vite, featuring dynamic movie data, a responsive UI, and a video player for trailers, Login page.
 
-.navbar .dropdown p {
-font-size: 13px;
+## Features
 
-cursor: pointer;
-}
+- Dynamic movie data from TMDb API
+- Responsive design for all devices
+- Hero section with featured movie
+- Scrollable movie cards
+- Embedded YouTube player for trailers
+- Dark mode toggle
 
-.navbar-profile:hover .dropdown {
-display: block;
-}
-.nav-dark {
-background: #141414;
-}
+## Tech Stack
 
-@media (max-width: 800px) {
-.navbar {
-padding: 20px 4%;
-}
-.navbar img {
-height: 25px;
-}
+- React, React Router
+- Vite
+- TMDb API
+- CSS
+- HTML
+- JavaScript
 
-.navbar-left ul {
-display: none;
-}
-}
-@media (max-width: 500px) {
-.navbar img {
-height: 20px;
-}
+## Deployment
 
-.navbar-right {
-gap: 10px;
-}
-}
+- Hosted on Vercel
+- Version control via GitHub
 
-.navbar-right .dark {
-width: 25px;
-cursor: pointer;
-}
+## Prerequisites
 
-<TitleCards title={"Blockbuster Movies"} category={"top_rated}"} />
+- Node.js
+- TMDb API Key
+
+## Folder Structure
+
+Refer to the detailed folder structure above.
+
+## API Usage
+
+- Fetch Movies: `https://api.themoviedb.org/3/movie/{category}`
+- Fetch Trailers: `https://api.themoviedb.org/3/movie/{id}/videos`
+
+## UI/UX
+
+- Fully responsive design
+- Smooth scrolling and hover effects
+- Fixed navbar with dynamic background
+
+GitHub Repo Link: https://github.com/kiranKumaris/NetflixClone
+Website URL on Vercel: https://netflix-clone-bay-nu-46.vercel.app/
